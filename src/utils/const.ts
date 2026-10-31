@@ -270,8 +270,7 @@ export const MAP_TILE_STYLES = {
     'bright-dark':
       'https://api.maptiler.com/maps/bright-v2-dark/style.json?key=',
     'topo-light': 'https://api.maptiler.com/maps/topo-v2/style.json?key=',
-    'topo-dark':
-      'https://api.maptiler.com/maps/topo-v2-dark/style.json?key=',
+    'topo-dark': 'https://api.maptiler.com/maps/topo-v2-dark/style.json?key=',
     'winter-light': 'https://api.maptiler.com/maps/winter-v2/style.json?key=',
     'winter-dark':
       'https://api.maptiler.com/maps/winter-v2-dark/style.json?key=',

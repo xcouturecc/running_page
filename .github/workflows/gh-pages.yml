@@ -99,7 +99,8 @@ jobs:
       - name: Build
         env:
           REPO_NAME: ${{ github.event.repository.name }}
-          VITE_MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+          # Repository variables are available to reusable workflows; direct dispatches may also use a secret.
+          VITE_MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN || vars.MAPBOX_TOKEN }}
         run: PATH_PREFIX=/$REPO_NAME pnpm build
 
       - name: Upload artifact
